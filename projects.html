@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/9fb54ba86a.js" crossorigin="anonymous"></script>
+    
+    <title>Projects</title>
+</head>
+
+<body>
+    <header>       
+        <nav id="top-nav">
+            <ul>                             
+                <li><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="dropdown"><a href="./projects.html" class="active"> Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>   
+        </nav>  
+    </header>
+    
+    <nav id="side-nav">
+        <div class="nav-projects">
+            <ul>
+                <li><a href="#" class="active">Unity Games</a>
+                    <ul>
+                        <li><a href="#" class="active">Abyssian</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Animation Programming</a></li>
+                <li><a href="#">UI Work</a>
+                    <ul>
+                        <li><a href="#">Kara</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">3D Modelling</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/vanessa-rakoczy-744225174/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+                <li><a href="https://github.com/nesacr" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a></li>
+                <li id="dog"><a href="#">Dog</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="other-main">
+        <h1>Abyssian</h1>
+        <h2>About</h2>
+        <p> 
+            Abyssian is a first-person, action-adventure metroid-vania developed in Unity engine as a Capstone project in a small team of 11 developers/designers. With an equal emphasis on exploration, puzzle-solving, and alien combat, Abyssian takes place on an alient planet overcome by an evil presence. Play as a lone survivor in this hostile crashsite, looking for any way out.
+        </p>
+        <h2>Contributions</h2>
+        <p>As one of the four programmers in the team, I mainly focused on developing core game mechanics, including weapon functionality, player UI and stats, AI behaviour, animations, and more.</p>
+        <div class="info">            
+            <ul class="fa-ul">
+                    <h3>Player UI</h3> 
+                    <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span>
+                        implemented player HUD, that includes ammo, health and armor display, current weapons equipped, notifications, and compass component
+                    </li>      
+                    <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span>
+                        ammo system UI updates corresponding to player's current ammo count and current weapons clip size
+                    </li>
+                    <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span>
+                        compass component that tracks nearby enemies, ammo and health pickups, icons grow/shrink based on proximity
+                    </li>
+                    <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span>
+                        on screen notifications for ammo and health pickups
+                    </li>
+                    <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span>
+                        health, armor and stamina UI display utilizes Unity sliders and reflects player's current stats
+                    </li>
+                    <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span>
+                        reticule that targets enemies and grows/shrinks on focus, also displays current item on raycast
+                    </li>
+                </ul>
+           
+                <video muted autoplay loop width=70%
+                    src="./resources/UI_mobile.mp4">
+                    video not supported
+                </video>
+        </div>
+        <h3>Enemy Animations</h3>
+        <h3>AI Behaviour</h3>
+        <div class="info">            
+            <ul class="fa-ul">
+                    <h3>Weapon Mechanics</h3>       
+                    <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span>
+                        programmed the base class for weapon functionality, using raycasting and particle effects to simulate projectiles instead of object pooling
+                    </li>
+                    <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span>
+                        each weapon has different functionality and it's own ammo count, types and clip sizes
+                    </li>
+                    <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span>
+                        implemented the artists' animations for weapon use and switching
+                    </li>
+                </ul>
+           
+                <video muted autoplay loop width=70%  
+                    src="./resources/Weapons_desktop.mp4">
+                    video not supported
+                </video>
+        </div>
+        <h3>Player Stats</h3>
+        
+    </div>
+   
+    <footer>
+        <div class="bottom-arrow">        
+            <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+    
+</body>
+
+
+</html>

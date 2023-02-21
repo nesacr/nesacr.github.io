@@ -31,13 +31,13 @@
                         <li><a href="#" class="active">Abyssian</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Animation Programming</a></li>
-                <li><a href="#">UI Work</a>
+                <!-- <li><a href="#">Animation Programming</a></li> -->
+                <li><a href="./kara.html">UI Work</a>
                     <ul>
-                        <li><a href="#">Kara</a></li>
+                        <li><a href="./kara.html">Kara</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Mobile</a></li>
+                <li><a href="./mobile.html">Mobile</a></li>
                 <li><a href="#">3D Modelling</a></li>
             </ul>
         </div>
@@ -45,21 +45,26 @@
             <ul>
                 <li><a href="https://www.linkedin.com/in/vanessa-rakoczy-744225174/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
                 <li><a href="https://github.com/nesacr" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a></li>
-                <li id="dog"><a href="#">Dog</a></li>
+                <!-- <li id="dog"><a href="#">Dog</a></li> -->
             </ul>
         </div>
     </nav>
     <div class="other-main">
         <h1>Abyssian</h1>
-        <h2>About</h2>
-        <p> 
-            Abyssian is a first-person, action-adventure metroid-vania developed in Unity engine as a Capstone project in a small team of 11 developers/designers. With an equal emphasis on exploration, puzzle-solving, and alien combat, Abyssian takes place on an alient planet overcome by an evil presence. Play as a lone survivor in this hostile crashsite, looking for any way out.
-        </p>
-        <h2>Contributions</h2>
-        <p>As one of the four programmers in the team, I mainly focused on developing core game mechanics, including weapon functionality, player UI and stats, AI behaviour, animations, and more.</p>
+        <div class="project-intro">
+            <h2>Overview</h2>
+            <div id="test">
+                <p> 
+                    Abyssian is a first-person, action-adventure metroid-vania developed in Unity engine as a Capstone project in a small team of 11 developers/designers. With an equal emphasis on exploration, puzzle-solving, and alien combat, Abyssian takes place on an alient planet overcome by an evil presence. Play as a lone survivor in this hostile crashsite, looking for any way out.
+                </p>
+
+            </div>
+            <h2>Main Contributions</h2>
+            <p>As one of the four programmers in the team, I mainly focused on developing core game mechanics, including weapon functionality, player UI and stats, AI behaviour, animations, and more.</p>        
+        </div>
         <div class="info">            
             <ul class="fa-ul">
-                    <h3>Player UI</h3> 
+                    <h3>Player UI / Player Stats</h3> 
                     <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span>
                         implemented player HUD, that includes ammo, health and armor display, current weapons equipped, notifications, and compass component
                     </li>      
@@ -85,8 +90,29 @@
                     video not supported
                 </video>
         </div>
-        <h3>Enemy Animations</h3>
-        <h3>AI Behaviour</h3>
+        <div class="info">            
+            <ul class="fa-ul">
+                    <h3>Enemy Animations</h3>      
+                    <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span>
+                        programmed the animation states and transitions using artists' fbx files for the enemy and boss models
+                    </li>
+                    <h3>AI Behaviour</h3>
+                    <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span>
+                        programmed AI logic for roamer enemies and boss using finite state machines
+                    </li>
+                    <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span>
+                        roamer enemy wanders between control points until player is in range/sight distance, then enters a chase state until it is close enough to attack
+                    </li>
+                    <li><span class="fa-li"><i class="fa-solid fa-caret-right"></i></span>
+                        boss enemy switches between randomized attacks; homing, drones, and close-range, and enters a "stunned" state upon taking significant damage, giving player a chance to hit their weak spot
+                    </li>
+                </ul>
+           
+                <video muted autoplay loop width=70%  
+                    src="./resources/Animations_desktop.mp4">
+                    video not supported
+                </video>
+        </div>
         <div class="info">            
             <ul class="fa-ul">
                     <h3>Weapon Mechanics</h3>       
@@ -106,7 +132,6 @@
                     video not supported
                 </video>
         </div>
-        <h3>Player Stats</h3>
         
     </div>
    

@@ -20,7 +20,7 @@ header {
 
 .main {
     position: absolute;
-    top: 648px;
+    top: 698px;
     /* this is currently the height of the nav bar, adjust accordingly to not cover the video from header 
     bottom: 30px; */
     width: 80%;
@@ -60,6 +60,7 @@ header {
     overflow: visible;
     width: 80%;
     right: 0;
+    border-bottom: 2px solid #b8ccc4;
     /*  add this if using additional icons/elements other than <ul> like close
     /* display: flex;
     text-align: center; */
@@ -135,52 +136,64 @@ header {
     height: 100%;
     background-color: #d0e5e3;
     color: #474747;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .profile {
-    border-bottom: 2px solid #474747;
-    height: 30%;
+    display: flex;
+    /* height: 30%; */
     max-height: 225px;
     flex-wrap: wrap;
-}
-
-.profile h1 {
-    position: relative;
-    text-align: left;
-    top: 10px;
-    left: 10px;
-    padding: 0px;
-    margin: 0 0 10px;
-}
-
-.profile p {
-    height: auto;
-    display: flex;
     justify-content: center;
 }
 
+.profile h1 {
+    border-bottom: 2px solid #b8ccc4;
+    position: relative;
+    text-align: left;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    margin: 0;
+    height: 51px;
+    width: 100%;
+}
+
+/* .profile p {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+} */
+
 .profile img {
-    margin: 10px 0;
+    position: relative;
+    margin: 0;
+    width: 170px;
+    height: 170px;
+    padding: 20px;
     border-radius: 50%;
 }
 
 .about-me {
+    margin: 0;
     height: 70%;
-    max-height: 450px;
     overflow: auto;
 }
 
 
 .about-me h2 {
-    padding: 20px 10px;
+    border-bottom: 2px solid #b8ccc4;
+    border-top: 2px solid #b8ccc4;
+    padding: 15px 10px;
     font-size: 1.15rem;
     margin: 0;
 }
 
 .about-me p {
     text-align: left;
-    padding: 0px 10px;
+    padding: 1.0rem;
     margin: 0;
     font-size: 0.95rem;
     /* height: 375px; */
@@ -220,6 +233,8 @@ header {
     margin-left: 0;
     padding: 0;
     top: 48px;
+    height: 100%;
+    border-right: 2px solid #b8ccc4;
     position: relative;
 }
 
@@ -233,9 +248,11 @@ header {
     font-size: 1.2rem;
     padding: 0.5rem 0.85rem;
     border-left: 2px solid #47474759;
+    border-right: 2px solid #47474759;
     text-align: left;
     margin: 0 2.5rem;   
     width: 100%;
+    
 }
 
 .nav-projects a {
@@ -258,7 +275,7 @@ header {
     right: 0;
     top: 48px;
     width: 80%;
-    height: 600px;
+    height: 650px;
     background-color: black;
 }
 
@@ -283,7 +300,9 @@ header {
 
 .project h2 {
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
 }
 
 .project img {
@@ -293,9 +312,9 @@ header {
 }
 
 .main h1 {
-    font-size: 1.5rem;
-    margin: 10px;
-    padding-left: 10px;
+    font-size: 2.0rem;
+    margin: 0;
+    padding-left: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid grey;
 }
@@ -401,13 +420,5 @@ html {
     } */
     .social #dog {
         display: none;
-    }
-
-    .profile img {
-        margin: 15% 10%;
-    }
-
-    .profile h1 {
-        font-size: 1.0rem;
     }
 }

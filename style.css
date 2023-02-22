@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: auto 0px;
 }
 
 /* .fa-solid fa-house {
@@ -280,11 +282,6 @@ header {
     background-color: black;
 }
 
-/* this isn't working, but the sticky should keep position fixed */
-.bottom-arrow {
-    position: sticky;
-}
-
 .top-projects {
     display: flex;
     flex-wrap: wrap;
@@ -473,6 +470,25 @@ header {
 .resume i {
     padding-left: 2.0rem;
 }
+
+.top {
+    --offset: 50px; 
+
+  position: sticky;
+  bottom: 20px;      
+  margin-right: 10px; 
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+
+  /* visual styling */
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  background: #000;
+  border-radius: 100px;
+  white-space: nowrap;
+  }
 
 html {
     box-sizing: border-box;

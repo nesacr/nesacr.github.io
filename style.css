@@ -427,6 +427,53 @@ header {
     margin-right: 1rem;
 }
 
+.contact p {
+    background-color: #b8ccc4;
+    color: white;
+}
+
+.contact a {
+    text-decoration: none;
+    color:#474747;
+}
+
+.resume {
+    border-top: 2px solid white;
+    display: flex;
+    align-items:flex-start;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.resume h2 {
+    margin: 0;
+    padding: 1.0rem;
+    min-width: 15%;
+    text-align: left;
+    border-right: 2px solid white;
+}
+
+.resume h3 {
+    margin: 0 0 1.0rem 0;
+}
+
+.resume ul {
+    margin: 1.0rem 1.5rem;
+    width: 100%;
+    overflow: auto;
+}
+
+.resume li {
+    padding-left: 1.0rem;
+    padding-bottom: 0.5rem;
+}
+
+.resume i {
+    padding-left: 2.0rem;
+}
+
 html {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

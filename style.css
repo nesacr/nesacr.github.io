@@ -145,15 +145,14 @@ header {
     overflow: hidden;
 }
 
-.profile {
+.profile, .profile-contact {
     display: flex;
     /* height: 30%; */
-    max-height: 225px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.profile h1 {
+.profile h1, .profile-contact h1 {
     border-bottom: 2px solid #b8ccc4;
     position: relative;
     text-align: left;
@@ -165,14 +164,6 @@ header {
     width: 100%;
 }
 
-/* .profile p {
-    margin: 0;
-    padding: 0;
-    height: auto;
-    display: flex;
-    justify-content: center;
-} */
-
 .profile img {
     position: relative;
     margin: 0;
@@ -182,9 +173,16 @@ header {
     border-radius: 50%;
 }
 
-.about-me {
+.profile-contact img {
+    position: relative;
     margin: 0;
-    height: 70%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-me {
+    position: relative;
+    margin: 0 0 60px 0;
     overflow: auto;
 }
 
@@ -489,6 +487,14 @@ header {
   border-radius: 100%;
   color: #ed9f11;
   white-space: nowrap;
+  }
+
+  .static {
+    position:absolute;
+  }
+
+  .static:hover {
+    opacity:0;
   }
 
 html {

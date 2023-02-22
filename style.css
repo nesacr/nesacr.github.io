@@ -435,6 +435,10 @@ header {
     color:#474747;
 }
 
+.contact a:hover {
+    color: #ed9f11;
+}
+
 .resume {
     border-top: 2px solid white;
     display: flex;

@@ -18,6 +18,7 @@ header {
     position: fixed;
     height: auto;
     top: 0;
+
 }
 
 .main {
@@ -26,6 +27,8 @@ header {
     /* this is currently the height of the nav bar, adjust accordingly to not cover the video from header 
     bottom: 30px; */
     width: 80%;
+    height: auto; 
+    padding-bottom: 20px;
     right: 0;
     background-color: rgba(71, 71, 71, 0.4);
     color: white;
@@ -473,20 +476,18 @@ header {
 
 .top {
     --offset: 50px; 
-
   position: sticky;
   bottom: 20px;      
-  margin-right: 10px; 
-  place-self: end;
+  margin: 20px; 
+  /* place-self: end; */
   margin-top: calc(100vh + var(--offset));
-
+  padding: 13px 15px;
   /* visual styling */
   text-decoration: none;
-  padding: 10px;
   font-family: sans-serif;
-  color: #fff;
-  background: #000;
-  border-radius: 100px;
+  background-color: rgba(15,15,15,0.4);
+  border-radius: 100%;
+  color: #ed9f11;
   white-space: nowrap;
   }
 

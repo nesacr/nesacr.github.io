@@ -461,7 +461,6 @@ header {
 .resume ul {
     margin: 1.0rem 1.5rem;
     width: 100%;
-    overflow: auto;
 }
 
 .resume li {
@@ -534,9 +533,37 @@ html {
     .social {
         display: none;
     }
+
+    .resume {
+        flex-flow: column wrap;
+    }
+
+    .other-main {
+        top: 0px;
+        width: 100%;
+    }
+    
+    .resume ul {
+        border-top: 2px solid white;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .resume i {
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
+
+    .resume {
+        font-size: 0.90rem;
+    }
+
+   #side-nav {
+    font-size: 0.75rem;
+   }
 
     /* .social a {
         position: absolute;

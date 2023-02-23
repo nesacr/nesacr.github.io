@@ -23,10 +23,11 @@ header {
 
 .main {
     position: absolute;
-    top: 698px;
+    top: 748px;
     /* this is currently the height of the nav bar, adjust accordingly to not cover the video from header 
     bottom: 30px; */
     width: 80%;
+    min-height: 650px;
     height: auto; 
     padding-bottom: 20px;
     right: 0;

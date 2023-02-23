@@ -565,6 +565,10 @@ html {
         font-size: 0.90rem;
     }
 
+    .resume ul {
+        margin: 0;
+    }
+
    #side-nav {
     font-size: 0.75rem;
    }

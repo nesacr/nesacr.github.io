@@ -421,11 +421,6 @@ header {
     padding:0;
 }
 
-.info video {
-    /* right: 0;
-    margin-right: 1rem; */
-}
-
 .contact p {
     background-color: #b8ccc4;
     color: white;
@@ -561,6 +556,47 @@ html {
 
 @media only screen and (max-width: 1100px) {
 
+    /* PROJECTS PAGE */
+    .info {
+        flex-flow: column wrap;
+    }
+    .info ul {
+        display: flex;
+        width: 100%;
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    .info h3 {
+        padding-right: 10px;
+    }
+
+    .info li {
+        margin: 0;
+        padding: 0 10px 10px 10px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .info i {
+        display: none;
+    }
+
+    .info video {
+        width: 100%;
+    }
+
+    /*3D modelling */
+    .model-photos {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .model-photos img {
+        padding: 10px;
+    }
+
+    /* CONTACT PAGE */
     .resume {
         font-size: 0.90rem;
     }

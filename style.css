@@ -633,10 +633,25 @@ html {
        padding-bottom: 20px;
     }
 
-    .info h3 {
+    .info h3, .info-blender h3 {
         /* position: absolute; */
         text-align: center;
         padding: 15px;
+    }
+
+    .info-blender {
+        flex-flow: column wrap;
+        width: 100%;
+    }
+
+    .project-intro-blender {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-blender video {
+        width: 100%;
+        margin: 0;
     }
 }
 

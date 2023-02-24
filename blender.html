@@ -21,12 +21,28 @@
 
 <body>
     <header>
+        <a id="top" class="hamburger" href="#top-nav" aria-label="Open Projects Menu">
+            <span class="sr-only">Open projects menu</span>
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </a>
         <nav id="top-nav">
             <ul>
                 <li><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li class="dropdown"><a href="./projects.html" class="active"> Projects</a></li>
+                <li class="dropdown"><a href="./projects.html" class="active"> Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./projects.html">Unity Games</a></li>
+                        <!-- <li><a href="#">Animation Programming</a></li> -->
+                        <li><a href="./kara.html">UI Work</a></li>
+                        <li><a href="./mobile.html">Mobile</a></li>
+                        <li><a href="./blender.html">3D Modelling</a></li>
+                    </ul>
+                </li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
+            <a class="ham-close" href="#" aria-label="Close Projects Menu">
+                <span class="sr-only">Close projects menu</span>
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </a> 
         </nav>
     </header>
 
